@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		B40DDC84133FF4E400245EFB /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = B40DDC83133FF4E400245EFB /* AppController.m */; };
+		B40DDC86133FF53900245EFB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40DDC85133FF53900245EFB /* WebKit.framework */; };
+		B40DDCB0133FF64400245EFB /* NSUserDefaults+AR.m in Sources */ = {isa = PBXBuildFile; fileRef = B40DDCA5133FF64400245EFB /* NSUserDefaults+AR.m */; };
+		B40DDCB1133FF64400245EFB /* NSWindow+localize.m in Sources */ = {isa = PBXBuildFile; fileRef = B40DDCA7133FF64400245EFB /* NSWindow+localize.m */; };
+		B40DDCB2133FF64400245EFB /* M42Defaults.m in Sources */ = {isa = PBXBuildFile; fileRef = B40DDCAA133FF64400245EFB /* M42Defaults.m */; };
+		B40DDCB3133FF64400245EFB /* M42PinchableTableview.m in Sources */ = {isa = PBXBuildFile; fileRef = B40DDCAD133FF64400245EFB /* M42PinchableTableview.m */; };
+		B40DDCB4133FF64400245EFB /* M42PinchableWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = B40DDCAF133FF64400245EFB /* M42PinchableWebView.m */; };
+		B40DDCB6133FF89100245EFB /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40DDCB5133FF89100245EFB /* IOKit.framework */; };
+		B40DDCB8133FF89A00245EFB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40DDCB7133FF89A00245EFB /* Security.framework */; };
+		B4171515133FEE940039AB14 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B4171505133FEE940039AB14 /* AppIcon.icns */; };
+		B4171526133FEF910039AB14 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B4171505133FEE940039AB14 /* AppIcon.icns */; };
+		B417152B133FEF910039AB14 /* HelperAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = B417150A133FEE940039AB14 /* HelperAppController.m */; };
+		B417152C133FEF910039AB14 /* ProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = B417150C133FEE940039AB14 /* ProgressIndicator.m */; };
+		B4171530133FEF910039AB14 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		B4171531133FEF910039AB14 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4598221105E8965007D5CF3 /* SystemConfiguration.framework */; };
+		B42D645F134A080100DB8663 /* M42Defaults.m in Sources */ = {isa = PBXBuildFile; fileRef = B40DDCAA133FF64400245EFB /* M42Defaults.m */; };
+		B42D6460134A080A00DB8663 /* NSUserDefaults+AR.m in Sources */ = {isa = PBXBuildFile; fileRef = B40DDCA5133FF64400245EFB /* NSUserDefaults+AR.m */; };
+		B42E657A15815E890082510C /* html in Resources */ = {isa = PBXBuildFile; fileRef = B42E657915815E890082510C /* html */; };
+		B42E657E15815F5C0082510C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B417151D133FEF280039AB14 /* Localizable.strings */; };
+		B42E657F15815F5C0082510C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B417151E133FEF280039AB14 /* MainMenu.xib */; };
+		B453FECB133FF8EF00EBAA1C /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B453FECA133FF8EF00EBAA1C /* libcrypto.dylib */; };
+		B453FECC133FF8FE00EBAA1C /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B453FECA133FF8EF00EBAA1C /* libcrypto.dylib */; };
+		B453FECD133FF90200EBAA1C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40DDCB5133FF89100245EFB /* IOKit.framework */; };
+		B453FECE133FF90500EBAA1C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40DDCB7133FF89A00245EFB /* Security.framework */; };
+		B453FEE2133FFA1B00EBAA1C /* iTrafficIndicatorHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = B4171535133FEF910039AB14 /* iTrafficIndicatorHelper.app */; };
+		B453FEE4133FFA6100EBAA1C /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B453FEE3133FFA6100EBAA1C /* ServiceManagement.framework */; };
+		B453FEF0133FFD9E00EBAA1C /* MenuMeterNetStats.m in Sources */ = {isa = PBXBuildFile; fileRef = B453FEEB133FFD9E00EBAA1C /* MenuMeterNetStats.m */; };
+		B453FF04134005BF00EBAA1C /* MenuMeterNetPPP.m in Sources */ = {isa = PBXBuildFile; fileRef = B453FF03134005BF00EBAA1C /* MenuMeterNetPPP.m */; };
+		B4F78D6413506D8E00006D54 /* MenuMeterLiveMenuWorkarounds.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F78D6313506D8E00006D54 /* MenuMeterLiveMenuWorkarounds.m */; };
+		B4F78D7A13506EB500006D54 /* HelperAppController+MenuMeterMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F78D7913506EB500006D54 /* HelperAppController+MenuMeterMenu.m */; };
+		B4F78D841350702D00006D54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F78D831350702D00006D54 /* main.m */; };
+		B4F78D861350703800006D54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F78D851350703800006D54 /* main.m */; };
+		B4F78DA41350709400006D54 /* MenuMeterNetConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F78DA31350709400006D54 /* MenuMeterNetConfig.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B453FECF133FF9A900EBAA1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4171523133FEF910039AB14;
+			remoteInfo = iPhoneLikeIndicatorHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B453FEE1133FF9EF00EBAA1C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = iTrafficIndicator.app/Contents/Library/LoginItems;
+			dstSubfolderSpec = 16;
+			files = (
+				B453FEE2133FFA1B00EBAA1C /* iTrafficIndicatorHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		8D1107320486CEB800E47090 /* iTrafficIndicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTrafficIndicator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40DDC82133FF4E400245EFB /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = Sources/Launcher/AppController.h; sourceTree = SOURCE_ROOT; };
+		B40DDC83133FF4E400245EFB /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = Sources/Launcher/AppController.m; sourceTree = SOURCE_ROOT; };
+		B40DDC85133FF53900245EFB /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B40DDCA4133FF64400245EFB /* NSUserDefaults+AR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+AR.h"; sourceTree = "<group>"; };
+		B40DDCA5133FF64400245EFB /* NSUserDefaults+AR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+AR.m"; sourceTree = "<group>"; };
+		B40DDCA6133FF64400245EFB /* NSWindow+localize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+localize.h"; sourceTree = "<group>"; };
+		B40DDCA7133FF64400245EFB /* NSWindow+localize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+localize.m"; sourceTree = "<group>"; };
+		B40DDCA9133FF64400245EFB /* M42Defaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M42Defaults.h; sourceTree = "<group>"; };
+		B40DDCAA133FF64400245EFB /* M42Defaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M42Defaults.m; sourceTree = "<group>"; };
+		B40DDCAC133FF64400245EFB /* M42PinchableTableview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M42PinchableTableview.h; sourceTree = "<group>"; };
+		B40DDCAD133FF64400245EFB /* M42PinchableTableview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M42PinchableTableview.m; sourceTree = "<group>"; };
+		B40DDCAE133FF64400245EFB /* M42PinchableWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M42PinchableWebView.h; sourceTree = "<group>"; };
+		B40DDCAF133FF64400245EFB /* M42PinchableWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M42PinchableWebView.m; sourceTree = "<group>"; };
+		B40DDCB5133FF89100245EFB /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		B40DDCB7133FF89A00245EFB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B4171505133FEE940039AB14 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		B4171509133FEE940039AB14 /* HelperAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperAppController.h; sourceTree = "<group>"; };
+		B417150A133FEE940039AB14 /* HelperAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperAppController.m; sourceTree = "<group>"; };
+		B417150B133FEE940039AB14 /* ProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressIndicator.h; sourceTree = "<group>"; };
+		B417150C133FEE940039AB14 /* ProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressIndicator.m; sourceTree = "<group>"; };
+		B417150D133FEE940039AB14 /* iTrafficIndicator_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTrafficIndicator_Prefix.pch; sourceTree = "<group>"; };
+		B417151D133FEF280039AB14 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		B417151E133FEF280039AB14 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		B4171535133FEF910039AB14 /* iTrafficIndicatorHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTrafficIndicatorHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4171537133FF03C0039AB14 /* Info-Helper.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Helper.plist"; sourceTree = "<group>"; };
+		B4171538133FF03C0039AB14 /* Info-Launcher.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Launcher.plist"; sourceTree = "<group>"; };
+		B42E657915815E890082510C /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
+		B453FECA133FF8EF00EBAA1C /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
+		B453FEE3133FFA6100EBAA1C /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		B453FEEA133FFD9E00EBAA1C /* MenuMeterNetStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuMeterNetStats.h; sourceTree = "<group>"; };
+		B453FEEB133FFD9E00EBAA1C /* MenuMeterNetStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuMeterNetStats.m; sourceTree = "<group>"; };
+		B453FF02134005BF00EBAA1C /* MenuMeterNetPPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuMeterNetPPP.h; sourceTree = "<group>"; };
+		B453FF03134005BF00EBAA1C /* MenuMeterNetPPP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuMeterNetPPP.m; sourceTree = "<group>"; };
+		B4598221105E8965007D5CF3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		B4F78D6213506D8E00006D54 /* MenuMeterLiveMenuWorkarounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuMeterLiveMenuWorkarounds.h; sourceTree = "<group>"; };
+		B4F78D6313506D8E00006D54 /* MenuMeterLiveMenuWorkarounds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuMeterLiveMenuWorkarounds.m; sourceTree = "<group>"; };
+		B4F78D7813506EB500006D54 /* HelperAppController+MenuMeterMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HelperAppController+MenuMeterMenu.h"; sourceTree = "<group>"; };
+		B4F78D7913506EB500006D54 /* HelperAppController+MenuMeterMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HelperAppController+MenuMeterMenu.m"; sourceTree = "<group>"; };
+		B4F78D831350702D00006D54 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Sources/Launcher/main.m; sourceTree = SOURCE_ROOT; };
+		B4F78D851350703800006D54 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B4F78DA21350709400006D54 /* MenuMeterNetConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuMeterNetConfig.h; sourceTree = "<group>"; };
+		B4F78DA31350709400006D54 /* MenuMeterNetConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuMeterNetConfig.m; sourceTree = "<group>"; };
+		B4F78DB8135071F300006D54 /* MenuMeterNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuMeterNet.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B453FEE4133FFA6100EBAA1C /* ServiceManagement.framework in Frameworks */,
+				B453FECB133FF8EF00EBAA1C /* libcrypto.dylib in Frameworks */,
+				B40DDCB8133FF89A00245EFB /* Security.framework in Frameworks */,
+				B40DDCB6133FF89100245EFB /* IOKit.framework in Frameworks */,
+				B40DDC86133FF53900245EFB /* WebKit.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B417152F133FEF910039AB14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4171530133FEF910039AB14 /* Cocoa.framework in Frameworks */,
+				B4171531133FEF910039AB14 /* SystemConfiguration.framework in Frameworks */,
+				B453FECE133FF90500EBAA1C /* Security.framework in Frameworks */,
+				B453FECD133FF90200EBAA1C /* IOKit.framework in Frameworks */,
+				B453FECC133FF8FE00EBAA1C /* libcrypto.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* iTrafficIndicator.app */,
+				B4171535133FEF910039AB14 /* iTrafficIndicatorHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* iPhoneLikeIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				B4171537133FF03C0039AB14 /* Info-Helper.plist */,
+				B4171538133FF03C0039AB14 /* Info-Launcher.plist */,
+				B4171504133FEE940039AB14 /* Resources */,
+				B4171507133FEE940039AB14 /* Sources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = iPhoneLikeIndicator;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B453FECA133FF8EF00EBAA1C /* libcrypto.dylib */,
+				B40DDCB5133FF89100245EFB /* IOKit.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				B40DDC85133FF53900245EFB /* WebKit.framework */,
+				B40DDCB7133FF89A00245EFB /* Security.framework */,
+				B4598221105E8965007D5CF3 /* SystemConfiguration.framework */,
+				B453FEE3133FFA6100EBAA1C /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B40DDCA3133FF64400245EFB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B40DDCA4133FF64400245EFB /* NSUserDefaults+AR.h */,
+				B40DDCA5133FF64400245EFB /* NSUserDefaults+AR.m */,
+				B40DDCA6133FF64400245EFB /* NSWindow+localize.h */,
+				B40DDCA7133FF64400245EFB /* NSWindow+localize.m */,
+			);
+			name = Categories;
+			path = Sources/Launcher/Categories;
+			sourceTree = SOURCE_ROOT;
+		};
+		B40DDCA8133FF64400245EFB /* M42Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				B40DDCA9133FF64400245EFB /* M42Defaults.h */,
+				B40DDCAA133FF64400245EFB /* M42Defaults.m */,
+			);
+			name = M42Defaults;
+			path = Sources/Launcher/M42Defaults;
+			sourceTree = SOURCE_ROOT;
+		};
+		B40DDCAB133FF64400245EFB /* M42PinchableViews */ = {
+			isa = PBXGroup;
+			children = (
+				B40DDCAC133FF64400245EFB /* M42PinchableTableview.h */,
+				B40DDCAD133FF64400245EFB /* M42PinchableTableview.m */,
+				B40DDCAE133FF64400245EFB /* M42PinchableWebView.h */,
+				B40DDCAF133FF64400245EFB /* M42PinchableWebView.m */,
+			);
+			name = M42PinchableViews;
+			path = Sources/Launcher/M42PinchableViews;
+			sourceTree = SOURCE_ROOT;
+		};
+		B4171504133FEE940039AB14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B417151C133FEF280039AB14 /* Launcher */,
+				B42E657915815E890082510C /* html */,
+				B4171505133FEE940039AB14 /* AppIcon.icns */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B4171507133FEE940039AB14 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B417151B133FEEC30039AB14 /* Launcher */,
+				B4171508133FEE940039AB14 /* Helper */,
+				B417150D133FEE940039AB14 /* iTrafficIndicator_Prefix.pch */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B4171508133FEE940039AB14 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B4F78D851350703800006D54 /* main.m */,
+				B453FEE5133FFD9D00EBAA1C /* MenuMeterNet */,
+				B4171509133FEE940039AB14 /* HelperAppController.h */,
+				B417150A133FEE940039AB14 /* HelperAppController.m */,
+				B417150B133FEE940039AB14 /* ProgressIndicator.h */,
+				B417150C133FEE940039AB14 /* ProgressIndicator.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B417151B133FEEC30039AB14 /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				B4F78D831350702D00006D54 /* main.m */,
+				B40DDCA3133FF64400245EFB /* Categories */,
+				B40DDCA8133FF64400245EFB /* M42Defaults */,
+				B40DDCAB133FF64400245EFB /* M42PinchableViews */,
+				B40DDC82133FF4E400245EFB /* AppController.h */,
+				B40DDC83133FF4E400245EFB /* AppController.m */,
+			);
+			path = Launcher;
+			sourceTree = SOURCE_ROOT;
+		};
+		B417151C133FEF280039AB14 /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				B417151D133FEF280039AB14 /* Localizable.strings */,
+				B417151E133FEF280039AB14 /* MainMenu.xib */,
+			);
+			path = Launcher;
+			sourceTree = "<group>";
+		};
+		B453FEE5133FFD9D00EBAA1C /* MenuMeterNet */ = {
+			isa = PBXGroup;
+			children = (
+				B4F78DB8135071F300006D54 /* MenuMeterNet.h */,
+				B4F78DA21350709400006D54 /* MenuMeterNetConfig.h */,
+				B4F78DA31350709400006D54 /* MenuMeterNetConfig.m */,
+				B453FF02134005BF00EBAA1C /* MenuMeterNetPPP.h */,
+				B453FF03134005BF00EBAA1C /* MenuMeterNetPPP.m */,
+				B453FEEA133FFD9E00EBAA1C /* MenuMeterNetStats.h */,
+				B453FEEB133FFD9E00EBAA1C /* MenuMeterNetStats.m */,
+				B4F78D6213506D8E00006D54 /* MenuMeterLiveMenuWorkarounds.h */,
+				B4F78D6313506D8E00006D54 /* MenuMeterLiveMenuWorkarounds.m */,
+				B4F78D7813506EB500006D54 /* HelperAppController+MenuMeterMenu.h */,
+				B4F78D7913506EB500006D54 /* HelperAppController+MenuMeterMenu.m */,
+			);
+			path = MenuMeterNet;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* iTrafficIndicatorLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "iTrafficIndicatorLauncher" */;
+			buildPhases = (
+				B453FEE1133FF9EF00EBAA1C /* CopyFiles */,
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B453FED0133FF9A900EBAA1C /* PBXTargetDependency */,
+			);
+			name = iTrafficIndicatorLauncher;
+			productInstallPath = "$(HOME)/Applications";
+			productName = iPhoneLikeIndicator;
+			productReference = 8D1107320486CEB800E47090 /* iTrafficIndicator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4171523133FEF910039AB14 /* iTrafficIndicatorHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4171532133FEF910039AB14 /* Build configuration list for PBXNativeTarget "iTrafficIndicatorHelper" */;
+			buildPhases = (
+				B4171524133FEF910039AB14 /* Resources */,
+				B417152A133FEF910039AB14 /* Sources */,
+				B417152F133FEF910039AB14 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iTrafficIndicatorHelper;
+			productInstallPath = "$(HOME)/Applications";
+			productName = iPhoneLikeIndicator;
+			productReference = B4171535133FEF910039AB14 /* iTrafficIndicatorHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iTrafficIndicator" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* iPhoneLikeIndicator */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* iTrafficIndicatorLauncher */,
+				B4171523133FEF910039AB14 /* iTrafficIndicatorHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4171515133FEE940039AB14 /* AppIcon.icns in Resources */,
+				B42E657A15815E890082510C /* html in Resources */,
+				B42E657E15815F5C0082510C /* Localizable.strings in Resources */,
+				B42E657F15815F5C0082510C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4171524133FEF910039AB14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4171526133FEF910039AB14 /* AppIcon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40DDC84133FF4E400245EFB /* AppController.m in Sources */,
+				B40DDCB0133FF64400245EFB /* NSUserDefaults+AR.m in Sources */,
+				B40DDCB1133FF64400245EFB /* NSWindow+localize.m in Sources */,
+				B40DDCB2133FF64400245EFB /* M42Defaults.m in Sources */,
+				B40DDCB3133FF64400245EFB /* M42PinchableTableview.m in Sources */,
+				B40DDCB4133FF64400245EFB /* M42PinchableWebView.m in Sources */,
+				B4F78D841350702D00006D54 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B417152A133FEF910039AB14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B417152B133FEF910039AB14 /* HelperAppController.m in Sources */,
+				B417152C133FEF910039AB14 /* ProgressIndicator.m in Sources */,
+				B453FEF0133FFD9E00EBAA1C /* MenuMeterNetStats.m in Sources */,
+				B453FF04134005BF00EBAA1C /* MenuMeterNetPPP.m in Sources */,
+				B42D645F134A080100DB8663 /* M42Defaults.m in Sources */,
+				B42D6460134A080A00DB8663 /* NSUserDefaults+AR.m in Sources */,
+				B4F78D6413506D8E00006D54 /* MenuMeterLiveMenuWorkarounds.m in Sources */,
+				B4F78D7A13506EB500006D54 /* HelperAppController+MenuMeterMenu.m in Sources */,
+				B4F78D861350703800006D54 /* main.m in Sources */,
+				B4F78DA41350709400006D54 /* MenuMeterNetConfig.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B453FED0133FF9A900EBAA1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4171523133FEF910039AB14 /* iTrafficIndicatorHelper */;
+			targetProxy = B453FECF133FF9A900EBAA1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B4171533133FEF910039AB14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Sources/iTrafficIndicator_Prefix.pch;
+				INFOPLIST_FILE = "Info-Helper.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.6.6;
+				PRODUCT_NAME = iTrafficIndicatorHelper;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B4171534133FEF910039AB14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Sources/iTrafficIndicator_Prefix.pch;
+				INFOPLIST_FILE = "Info-Helper.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.6.6;
+				PRODUCT_NAME = iTrafficIndicatorHelper;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Sources/iTrafficIndicator_Prefix.pch;
+				INFOPLIST_FILE = "Info-Launcher.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.6.6;
+				PRODUCT_NAME = iTrafficIndicator;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Sources/iTrafficIndicator_Prefix.pch;
+				INFOPLIST_FILE = "Info-Launcher.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.6.6;
+				PRODUCT_NAME = iTrafficIndicator;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = USE_SAMPLE_RECEIPT;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6.6;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4171532133FEF910039AB14 /* Build configuration list for PBXNativeTarget "iTrafficIndicatorHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4171533133FEF910039AB14 /* Debug */,
+				B4171534133FEF910039AB14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "iTrafficIndicatorLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iTrafficIndicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

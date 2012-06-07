@@ -1,0 +1,14 @@
+/* 
+   Localizable.strings
+   Autorunner
+
+   Created by Dominik Pich on 3/10/11.
+   Copyright 2011 FHK Gummersbach. All rights reserved.
+ */
+"aboutTitle" = "About";
+"prefsTitle" = "Preferences";
+"prefsEnabled" = "Run in Background and Auto-Start on Login";
+"prefsEnabledHint" = "Started automatically at login, iPhoneLikeIndicator shows no dock icon.";
+"prefsMinBytes" = "The minimum number of bytes to be transfered per second before the indicator shows up";
+"continueInBG" = "Continue iTrafficIndicator in background and start it on login";
+"continueInBGInfo" = "Run in Background and Auto-Start on Login? (iTrafficIndicator shows no dock icon when run that way)";

@@ -1,0 +1,13 @@
+//
+// Prefix header for all source files of the 'iPhoneLikeIndicator' target in the 'iPhoneLikeIndicator' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+	#import <SystemConfiguration/SystemConfiguration.h>
+#endif
+#define BUNDLE_IDENTIFIER @"info.pich.iPhoneLikeIndicator"
+#define BUNDLE_SHORT_VERSION_STRING @"1.0.1"
+#define BUNDLE_NAME @"iTrafficIndicator"
+
+#define MinBytesPrefKey @"MinBytesPrefKey"
