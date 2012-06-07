@@ -1,4 +1,4 @@
-<img width="570px" src="https://github.com/Daij-Djan/iTrafficIndicator/raw/master/Resources/html/ipliLogo.png"/>
+<img width="50px" src="https://github.com/Daij-Djan/iTrafficIndicator/raw/master/Resources/html/ipliLogo.png"/>
 
 #About
 iTrafficIndicator shows a spinning wheel in the menu bar to indicate network activy. When there is no activity the indicator is stopped.
