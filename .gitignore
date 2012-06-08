@@ -8,3 +8,6 @@ build/*
 .DS_Store
 profile
 *.perspectivev3
+iTrafficIndicator.xcodeproj/project.xcworkspace/xcuserdata/dominik.xcuserdatad/UserInterfaceState.xcuserstate
+Resources/.DS_Store
+Sources/.DS_Store
